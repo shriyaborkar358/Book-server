@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
 
 const dbConnection = async () => {
-  const conn = await mongoose.connect(process.env.MONGo_URL)
+  const conn = await mongoose.connect(process.env.MONGO_URL)
 
   if (conn) {
     console.log(`MongoDb connected 🪙`);
