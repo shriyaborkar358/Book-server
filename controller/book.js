@@ -28,7 +28,7 @@ const postBook = async(req, res)=>{
 
 const getBooks = async (req, res)=>{
 
-    const allBooks = await Book.find()
+    const allBooks = await Book.find().sort({createdId : -1})
 
     res.json({
         success : true,

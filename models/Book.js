@@ -6,6 +6,8 @@ const bookSchema = new Schema({
     category: String,
     price: Number,
     description: String
+}, {
+    timestamps: true
 })
 
 const Book = model("Book", bookSchema)
